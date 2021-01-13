@@ -101,6 +101,8 @@
 | 88. | &#9744; Shortest-Job-First (SJF) Scheduling|
 | 89. | &#9744; Multilevel Queue Scheduling|
 | 90. | &#9744; Priority Scheduling|
+| 91. | &#9744; Two Pointer Theorem
+| 92. | &#9744; Gap filling Method
 
 <br>
 
