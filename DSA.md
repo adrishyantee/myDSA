@@ -6,10 +6,6 @@
   <a href="https://github.com/singhayushh/_algorithms/stargazers"><img src="https://img.shields.io/github/stars/singhayushh/_algorithms?color=yellowgreen&label=Stargazers&logo=github" alt="stargazers"></a>
 </p>
 
-```diff
-- Accepting PRs only for the issue #1. Please do not send solution codes for any algorithms :)
-```
-
 ## About this Repository
 A personal help-page for preparing Data Structures and Algorithms, focusing on the CLRS Book...
 
@@ -32,20 +28,20 @@ This `README.md` file is for listing data-structures and algorithms, not necessa
 | Sl. | Topic | 
 |---|---|
 | 1. | &#9745; Terminologies & Jargons |
-| 2. | &#9745; [Insertion Sort](https://github.com/singhayushh/_Introduction_to_algorithms/blob/master/src/_insertionSort.java)  |
-| 3. | &#9745; [Merge Sort](https://github.com/singhayushh/_Introduction_to_algorithms/blob/master/src/_mergeSort.java) |
-| 4. | &#9745; [Maximum Subarray Sum](https://github.com/singhayushh/_Introduction_to_algorithms/blob/master/src/_maximumSubarray.java) |
-| 5. | &#9745; [Strassen's Algorithm](https://github.com/singhayushh/_Introduction_to_algorithms/blob/master/src/_strassen.java) |
-| 6. | &#9745; [Randomized Algorithms](https://github.com/singhayushh/_Introduction_to_algorithms/blob/master/src/_random.java) |
-| 7. | &#9745; [Heap Sort](https://github.com/singhayushh/_Introduction_to_algorithms/blob/master/src/_heapSort.java) |
-| 8. | &#9745; [Quick Sort](https://github.com/singhayushh/_Introduction_to_algorithms/blob/master/src/_quickSort.java)  |
-| 9. | &#9745; [Counting Sort](https://github.com/singhayushh/_Introduction_to_algorithms/blob/master/src/_countingSort.java)  |
-| 10. | &#9745; [Radix Sort](https://github.com/singhayushh/_Introduction_to_algorithms/blob/master/src/_radixSort.java)  |
-| 11. | &#9745; [Bucket Sort](https://github.com/singhayushh/_Introduction_to_algorithms/blob/master/src/_bucketSort.java) |
-| 12. | &#9745; [Stacks](https://github.com/singhayushh/_Introduction_to_algorithms/blob/master/src/_stack.java) & [Queues](https://github.com/singhayushh/_Introduction_to_algorithms/blob/master/src/_queue.java) |
-| 13. | &#9745; [Linked List](https://github.com/singhayushh/_Introduction_to_algorithms/blob/master/src/_customLinkedList.java) |
-| 14. | &#9745; [Hash Tables & Hashing](https://github.com/singhayushh/_Introduction_to_algorithms/blob/master/src/_hashing.java) |
-| 15. | &#9745; [Binary Search Trees](https://github.com/singhayushh/_Introduction_to_algorithms/blob/master/src/_binaryTree.java) |
+| 2. | &#9745; [Insertion Sort]
+| 3. | &#9745; [Merge Sort]
+| 4. | &#9745; [Maximum Subarray Sum]
+| 5. | &#9745; [Strassen's Algorithm]
+| 6. | &#9745; [Randomized Algorithms]
+| 7. | &#9745; [Heap Sort]
+| 8. | &#9745; [Quick Sort]
+| 9. | &#9745; [Counting Sort]
+| 10. | &#9745; [Radix Sort]
+| 11. | &#9745; [Bucket Sort]
+| 12. | &#9745; [Stacks]&[Queues]
+| 13. | &#9745; [Linked List]
+| 14. | &#9745; [Hash Tables & Hashing]
+| 15. | &#9745; [Binary Search Trees]
 | 16. | &#9744; Red Black Trees |
 | 17. | &#9744; AVL Trees |
 | 18. | &#9744; Order Statistics |
@@ -77,7 +73,7 @@ This `README.md` file is for listing data-structures and algorithms, not necessa
 | 44. | &#9744; Johnson's Algorithm |
 | 45. | &#9744; Ford-Fullkerson's Algorithm |
 | 46. | &#9744; Maximum Bipartite |
-| 47. | &#9745; [Multithreading Basics](https://github.com/singhayushh/_Introduction_to_algorithms/blob/master/src/MultiThreading.java) |
+| 47. | &#9745; [Multithreading Basics]
 | 48. | &#9744; Linear Equalities and LPP |
 | 49. | &#9744; The Simplex Algorithm |
 | 50. | &#9744; Fourier Transforms |
