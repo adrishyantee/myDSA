@@ -12,21 +12,21 @@
 
 | Sl. | Topic | 
 |---|---|
-| 1. | &#9745; Terminologies & Jargons|
-| 2. | &#9745; [Insertion Sort]|
-| 3. | &#9745; [Merge Sort]
-| 4. | &#9745; [Maximum Subarray Sum]|
-| 5. | &#9745; [Strassen's Algorithm]|
-| 6. | &#9745; [Randomized Algorithms]|
-| 7. | &#9745; [Heap Sort]|
-| 8. | &#9745; [Quick Sort]|
-| 9. | &#9745; [Counting Sor||
-| 10. | &#9745; [Radix Sort]|
-| 11. | &#9745; [Bucket Sort]|
-| 12. | &#9745; [Stacks]&[Queues]|
-| 13. | &#9745; [Linked List]|
-| 14. | &#9745; [Hash Tables & Hashing]|
-| 15. | &#9745; [Binary Search Trees]|
+| 1. | &#9744; Terminologies & Jargons|
+| 2. | &#9744; [Insertion Sort]|
+| 3. | &#9744; [Merge Sort]
+| 4. | &#9744; [Maximum Subarray Sum]|
+| 5. | &#9744; [Strassen's Algorithm]|
+| 6. | &#9744; [Randomized Algorithms]|
+| 7. | &#9744; [Heap Sort]|
+| 8. | &#9744; [Quick Sort]|
+| 9. | &#9744; [Counting Sor||
+| 10. | &#9744; [Radix Sort]|
+| 11. | &#9744; [Bucket Sort]|
+| 12. | &#9744; [Stacks]&[Queues]|
+| 13. | &#9744; [Linked List]|
+| 14. | &#9744; [Hash Tables & Hashing]|
+| 15. | &#9744; [Binary Search Trees]|
 | 16. | &#9744; Red Black Trees |
 | 17. | &#9744; AVL Trees |
 | 18. | &#9744; Order Statistics |
