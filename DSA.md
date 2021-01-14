@@ -103,10 +103,13 @@
 | 90. | &#9744; Priority Scheduling|
 | 91. | &#9744; Two Pointer Theorem
 | 92. | &#9744; Gap filling Method
+| 93. | &#9744; Binary Search
+| 94. | &#9744; Jump Search
+| 95. | &#9744; Interpolation Search
+| 96. | &#9744; Exponential Search
+| 97. | &#9744; Ternary Search
 
 <br>
-
-Solutions to the Exercises: [Walkccc - Github](https://walkccc.github.io/CLRS)
 
 ## Resources
 
