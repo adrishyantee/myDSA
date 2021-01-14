@@ -379,3 +379,5 @@ int main()
  }while(ch<6);
  return 0;
 }
+// to add other functions 
+
