@@ -25,7 +25,7 @@ int main() {
 
 
 
-  int j;
+     int j;
      double temp=0.0;
     for (i = 0; i < n-1; i++)      
     for (j = 0; j < n-i-1; j++)  
@@ -37,16 +37,18 @@ int main() {
         }
     if(n%2==0)
     {
-        median = (arr[n/2]+arr[((n/2)+1)])/2;
+        int k=arr[n/2-1];
+        int l=arr[(n/2)+1-1];
+        median = (k+l)/2.0;
     }
     else
     {
-        median = arr[(n/2)+1];
+     median = arr[(n+1)/2-1];
     }
     cout<<fixed<<setprecision(1);
     cout<<median<<endl;
 
-    double mode=0.0;
+    int mode;
     int count,max=0;
         for(int i=0;i<n;i++)
        {
