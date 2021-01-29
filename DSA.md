@@ -1,5 +1,7 @@
 ***ROAD MAP TO CP***
 
+WEEK 1
+
 >1st set of basic stuffs
 1.Pattern printing problems DONE
 2.time complexity analysis  DONE
@@ -8,7 +10,12 @@
 5.Simple Hashing Problem(frequency counting and stuffs) DONE
 6.Prefix Sum Problems(1D and 2D) {codeforces } 
 7.Sliding window technique(2 out of 5 contests) 
+
+
 -----------------------------------------------------------------------------------------------------------
+
+WEEK 2,3
+
 
  Basics of number theory
 1.Binary Search is a must(2/5 contests) 
@@ -32,6 +39,9 @@ tougher version of number theory
 6.Finding nCr and nPr for queries (constant time) 
 7.Inclusion Exclusion Principle (combinatorics problems) {hackerearth has wonderful bunch} {codeforces}
 ----------------------------------------------------------------------------
+
+WEEK 4
+
 
 1.learn about basic sorting algorithms (bubble, selection, insertion) 
 2. do problems which are constructive and have a lot of swapping terms in it. 
