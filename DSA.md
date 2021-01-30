@@ -3,11 +3,11 @@
 WEEK 1
 
 >1st set of basic stuffs
-1.Pattern printing problems DONE
-2.time complexity analysis  DONE
+1.Pattern printing problems 
+2.time complexity analysis  
 3.linear search and circular array representation  
-4.palindrome and other numbers(perfect, Armstrong) for basic number problems  DONE
-5.Simple Hashing Problem(frequency counting and stuffs) DONE
+4.palindrome and other numbers(perfect, Armstrong) for basic number problems  
+5.Simple Hashing Problem(frequency counting and stuffs) 
 6.Prefix Sum Problems(1D and 2D) {codeforces } 
 7.Sliding window technique(2 out of 5 contests) 
 
