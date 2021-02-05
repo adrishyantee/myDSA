@@ -4,7 +4,7 @@ WEEK 1
 
 >1st set of basic stuffs
 1.Pattern printing problems 
-2.time complexity analysis  
+2.time complexity analysis 
 3.linear search and circular array representation  
 4.palindrome and other numbers(perfect, Armstrong) for basic number problems  
 5.Simple Hashing Problem(frequency counting and stuffs) 
