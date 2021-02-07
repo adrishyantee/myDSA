@@ -1,17 +1,26 @@
-#include <iostream>
-#include <cmath>
-using namespace std;
+#include<stdio.h>
+#include<math.h>
+double roundNo(double num) 
+{ 
+double s;
+    if ( (num - (floor(num) + ceil(num))/2) < 0.5 )
+	s= floor(num); 
+	else
+	s= ceil(num); 
+	return s;
+} 
 
 int main() {
     int t;
-    cin>>t;
-    double multiplier1 = 2.0*sqrt(2)+3.0;
-    double multiplier2 = 1.0/multiplier1;
+    scanf("%d",&t);
+   double multiplier1 = 2*sqrt(2)+3;
+   double multiplier2 = 1/multiplier1;
     for(int i=0;i<t;i++){
         int n;
-        cin>>n;
-        double sum =(2.0 + multiplier1*multiplier1 + multiplier2*multiplier2)*n*n;
-       cout<<ceil(sum)<<endl;
+        scanf("%d",&n);
+        double sum =(double) (2 + multiplier1*multiplier1 + multiplier2*multiplier2)*n*n;
+        int m = roundNo(sum);
+        printf("%d\n",m);
     }
     return 0;
 }

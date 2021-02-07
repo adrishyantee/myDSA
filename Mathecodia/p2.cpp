@@ -5,38 +5,39 @@ int main()
 {
 const long M = 1000000007;
 int T;
-long m,p;
-long long n,a,c,mm,pp,i=0,j=0;
+long m,p,m1,p1;
+long  n,a,c,i=0,j=0;
 cin>>T;
-while(T>0){
+for(int test=0;test<T;test++){
 cin>>n>>m>>p>>a>>c;
 long long exp=0;
-mm=m;
-long long* B = new long long[m];
-long long* D = new long long[p];
+ long B[m];
+ long D[p];
 
-while(mm>0){
+ m1=m;
+while(m1>0){
     cin>>B[i];
     i++;
-    mm--;
+    m1--;
 }
-pp=p;
-while(pp>0){
+p1=p;
+while(p1>0){
     cin>>D[j];
     j++;
-    pp--;
+    p1--;
 }
-for(long long k=0;k<p;k++){
-    for(long long j=0;j<m;j++){
-        for(long long i=1;i<=n;i++){
-            exp= exp + (((a%M+(B[j]*(i-1))%M)%M)*(c%M+(D[k]*(i-1))%M)%M)% M;
+
+
+ 
+for(long  k=0;k<p;k++){
+    for(long  j=0;j<m;j++){
+            exp= exp +((B[j]*D[k])*(((n*(n+1)*(2*n+6))/6)- 
+			(n*(n+1) + n) )+ ((a* D[k] + c*B[j])*((n*(n+1))/2)-n)+a*c);
         }
-    }
 }
-cout<<(6%M*exp)% M<<endl;
+cout<<((6% M) * (exp% M))% M<<endl;
  delete[] B;
  delete[] D;
-T--;
 }
 return 0;
 }
