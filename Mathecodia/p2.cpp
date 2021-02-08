@@ -1,39 +1,77 @@
-#include <bits/stdc++.h> 
-using namespace std;
+#include<stdio.h>
 
-int main()
+long long calcgcd(long long n1, long long n2)
 {
-const long int M = 1000000007;
-int T;
-int m,p,m1,p1;
-long int n,a,c;
-long long int B[2*100000];
-long long int D[2*100000];
-cin>>T;
-for(int test=0;test<T;test++){
-cin>>n>>m>>p>>a>>c;
-long long int exp=0;
-int i=0,j=0;
- m1=m;
-while(m1>0){
-    cin>>B[i];
-    i++;
-    m1--;
+    if (n2 == 0)
+        return n1; 
+    return calcgcd(n2, n1%n2); 
 }
-p1=p;
-while(p1>0){
-    cin>>D[j];
-    j++;
-    p1--;
-}
+
+int gcd(int a, int b) 
+{ 
+    if (a == 0)
+        return b; 
+    return gcd(b % a, a); 
+} 
  
-for(int k=0;k<p;k++){
-    for(int j=0;j<m;j++){
-            exp= exp +(((B[j]*D[k])*(((n*(n+1)*(2*n+1))/6)- 
-			(n*(n+1) + n) )+ ((a* D[k]+ c*B[j])*((n*(n+1))/2)-n) + n*a*c)) % M;
+// Function to return LCM of two numbers 
+int lcm(int a, int b) 
+{ 
+    return (a / calcgcd(a, b)) * b;
+}
+
+// long long combination(int n, int r)
+// {
+//     long long p = 1, k = 1;
+//     if (n - r < r)
+//         r = n - r;
+//     if (r != 0) {
+//         while (r) {
+//             p *= n;
+//             k *= r;
+//             long long m = calcgcd(p, k);
+//             p /= m;
+//             k /= m;
+//             n--;
+//             r--;
+//         }
+//     }
+//     else
+//         p = 1;
+//     return p;
+// }
+
+int checkSum(int a, int b, int n){
+    long int multiple = lcm(a,b);
+    if(multiple/a <= n/2 && multiple/b<= n/2){
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+int main() {
+    int t,i;
+    scanf("%d",&t);
+    double ans[] = {0.000000,0.333333,0.466667,0.428571,0.511111,0.484848,0.494505,0.516667,0.516340,0.494737};
+    for(i=0;i<t;i++){
+        int n,j,k;
+        scanf("%d",&n);
+        if(n<=20){
+            int index= (n/2)-1;
+            printf("%f\n",ans[index]);
+            continue;
         }
-}
-cout<<(6*(long long int)(exp))% M<<endl;
-}
-return 0;
+        // long long totalWays = combination(n,2);
+        double count = 0;
+        double sampleSpace = 0;
+        for(j=1;j<n;j++){
+            for(k=j+1;k<=n;k++){
+                count+=checkSum(j,k,n);
+                sampleSpace++;
+            }
+        }
+        double prob = (count/sampleSpace);
+        printf("%f\n",prob);
+    }
 }
