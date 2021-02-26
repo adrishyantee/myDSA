@@ -1,5 +1,7 @@
 ***ROAD MAP TO CP***
 
+will start from March 1:
+
 WEEK 1
 
 >1st set of basic stuffs
