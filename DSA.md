@@ -1,10 +1,11 @@
 ***ROAD MAP TO CP***
 
-will start from March 1:
+Will start from March 1:
+Will get all the things written in copy!
 
 WEEK 1
 
->1st set of basic stuffs
+>1st set of basic stuffs 
 1.Pattern printing problems 
 2.time complexity analysis 
 3.linear search and circular array representation  
