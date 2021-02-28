@@ -1,7 +1,8 @@
 ***ROAD MAP TO CP***
 
-Will start from March 1:
+Will start after my semester exams:
 Will get all the things written in copy!
+M
 
 WEEK 1
 
