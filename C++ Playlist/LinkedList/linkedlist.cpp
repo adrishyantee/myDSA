@@ -53,6 +53,7 @@ void display(node* head){
     }
     cout<<"NULL"<<endl;
 }
+
 //searching through the linked list
 bool search(node* head,int key){
 node* temp= head;
@@ -66,6 +67,42 @@ while(temp!=NULL){
 }
 return false;
 }
+
+//deleting first element;
+void deleteAtHead(node* &head){
+    node* todelete = head;
+    head=head->next;
+
+    delete todelete;//to avoid memory leak
+}
+
+
+//deleting an element
+void deletion(node* &head,int val){
+//check for corner cases- no head or only one head
+    if(head==NULL){
+        return;
+    }
+
+    if(head->next==NULL){
+        deleteAtHead(head);
+        return;
+    }
+
+    //deleting
+    node* temp = head;
+    while(temp->next->data!=val){//traversing till we get the key
+    temp=temp->next;//traversing
+    }
+    node* todelete = temp->next;// the node to delete is found
+    temp->next=temp->next->next;
+	// temp stores the address of the element after the item to be deleted
+
+
+    delete todelete;// to avoid memory leak
+    return;
+}
+
 int main(){
 
 node* head=NULL; //making an empty linkedlist
@@ -75,7 +112,13 @@ insertAtTail(head,2);
 insertAtTail(head,3);
 display(head);
 insertAthead(head,4);
-cout<<search(head,0)<<endl;
+display(head);
+cout<<search(head,0)<<"\n";
+
+deleteAtHead(head);
+display(head);
+
+deletion(head,2);
 display(head);
     return 0;
 }
