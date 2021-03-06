@@ -42,7 +42,7 @@ void insertAtTail (node* &head, int val){
     }
     temp -> next=n;//inserting at tail
 }
-
+//display elements
 void display(node* head){
     node* temp =head;
     //traversing till the end
