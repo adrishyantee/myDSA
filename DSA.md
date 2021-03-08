@@ -1,10 +1,7 @@
 ***ROAD MAP TO CP***
 
-Will start after my semester exams:
-Will get all the things written in copy!
-M
-
 WEEK 1
+08/3/2021--Starting
 
 >1st set of basic stuffs 
 1.Pattern printing problems 
@@ -15,6 +12,7 @@ WEEK 1
 6.Prefix Sum Problems(1D and 2D) {codeforces } 
 7.Sliding window technique(2 out of 5 contests) 
 
+15/3/2021---should be finished
 
 -----------------------------------------------------------------------------------------------------------
 
