@@ -1,6 +1,6 @@
 ***ROAD MAP TO CP***
 
-WEEK 1
+
 08/3/2021--Starting
 
 >1st set of basic stuffs 
