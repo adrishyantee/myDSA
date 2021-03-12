@@ -20,7 +20,7 @@ int main(){
         temp = 1;
         break;
         }
-    //2very good solution of the problem at one step, to store number of moves done
+    //very good solution of the problem at one step, to store number of moves done
     ans=ans+(i+1-arr[i]);
     }
     if(temp==1){
