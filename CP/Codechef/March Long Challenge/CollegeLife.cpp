@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+//Not solved
 //BRUTE FORCE SOLUTION
 
 int main(){
