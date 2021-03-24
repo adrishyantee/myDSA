@@ -86,6 +86,7 @@ bool detectCycle(node* &head){
     return false;//else no cycle
 }
 
+//reoving the cycle present
 void removeCycle(node* &head){
     node* slow=head;//a slow pointer going one step
     node* fast=head;//a fast pointer going two steps

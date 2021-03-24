@@ -65,6 +65,7 @@ int length(node* &head){
     return l;
 }
 
+//intersecting two linked list at a given position
 void intersect(node* &head1, node *head2, int pos){
     node* temp1=head1;//making two temporary nodes to traverse
     node* temp2=head2;
@@ -80,6 +81,7 @@ void intersect(node* &head1, node *head2, int pos){
     temp2->next=temp1;//at the end we fix the nest to the node where the linkedlist intersects
 }
 
+//checking if two linked list are intersecting
 int intersectioncheck(node* &head1, node* &head2){
     int l1=length(head1);//calculating length for both linkedlist
     int l2=length(head2);

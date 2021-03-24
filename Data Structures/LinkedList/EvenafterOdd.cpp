@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 //make a node class
 class node{
     public:
@@ -55,54 +54,24 @@ void display(node* head){
     cout<<"NULL"<<endl;
 }
 
-//searching through the linked list
-bool search(node* head,int key){
-node* temp= head;
-while(temp!=NULL){
-    //traversing through the linked list
-    if(temp->data==key){//checking for equality
-        return true;
+//putting all even integers after odds in a series of consecutive numbers
+void evenAfterOdd(node* &head){//getting the head of the linked list which starts from an odd integer
+    node* odd=head;//start
+    node* even=head->next;//the second is an even
+    node* evenStart=even;//the first even number found
+
+    while(odd->next!=NULL && even->next!=NULL){//traversing till the end of the linkedlist
+        odd->next=even->next;//the odds are linked to odds skipping the evens
+        odd=odd->next;//traversing
+        even->next=odd->next;//evens are linked to evens skipping odds
+        even=even->next;//traversing
     }
-    temp=temp->next;
-    //switching to next element
-}
-return false;
-}
-
-//deleting first element;
-void deleteAtHead(node* &head){
-    node* todelete = head;
-    head=head->next;
-
-    delete todelete;//to avoid memory leak
+    if(odd->next==NULL){//if the odd points to null 
+        even->next=NULL;//point the end of evens to NULL
+    }
+    odd->next=evenStart;//point the end of odd to start of even
 }
 
-
-//deleting an element
-void deletion(node* &head,int val){
-//check for corner cases- no head or only one head
-    if(head==NULL){
-        return;
-    }
-
-    if(head->next==NULL){
-        deleteAtHead(head);
-        return;
-    }
-
-    //deleting
-    node* temp = head;
-    while(temp->next->data!=val){//traversing till we get the key
-    temp=temp->next;//traversing
-    }
-    node* todelete = temp->next;// the node to delete is found
-    temp->next=temp->next->next;
-	// temp stores the address of the element after the item to be deleted
-
-
-    delete todelete;// to avoid memory leak
-    return;
-}
 
 int main(){
 
@@ -111,15 +80,11 @@ node* head=NULL; //making an empty linkedlist
 insertAtTail(head,1);
 insertAtTail(head,2);
 insertAtTail(head,3);
+insertAtTail(head,4);
+insertAtTail(head,5);
+insertAtTail(head,6);
 display(head);
-insertAthead(head,4);
-display(head);
-cout<<search(head,0)<<"\n";
-
-deleteAtHead(head);
-display(head);
-
-deletion(head,2);
+evenAfterOdd(head);
 display(head);
     return 0;
 }

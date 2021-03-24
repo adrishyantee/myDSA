@@ -69,6 +69,7 @@ int length(node* &head){
     return l;
 }
 
+//append k nodes
 node* lastkappend(node* &head,int k){
     node* newTail;//taking two nodes one is newTail and one is newHead
     node* newHead;
