@@ -141,7 +141,8 @@ Imp instructions at 16:08
 2. Solve problems  from SPOJ(highly recommended,since it doesn’t involve any other algorithms)
 3. Google dynamic programming practice problem codeforces,u’ll get a wonderful blog with a lot of problems on it.
 
-After all the above standard DP,learn:
+After all the above standard DP, learn:
+
 4. Understand how we write recurrence for Digit DP(codeforces blog)(digit dynamic progg) and solve problems
 5. read about DP with Bitmasks and solve problems(hackerearth blog)
 6. DP on trees(gfg articles,rachit jains video)
