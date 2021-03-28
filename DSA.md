@@ -1,9 +1,9 @@
-**ROAD MAP TO CP**
+## ROAD MAP TO CP
 
 
 08/3/2021--Starting
 
-**1st set of basic stuffs **
+**1st set of basic stuffs**
 
 1. Pattern printing problems 
 2. time complexity analysis 
