@@ -9,11 +9,13 @@ class Stack{
 
     public:
 
+//stack constructor
     Stack(){// this is the stack constructor
         arr=new int[n];//an array is created dynamically
         top=-1;//index of top set to -1
     }
 
+//to push a valur inside a stack
     void push(int x){//this function helps to push an element inside the array used as a stack
         if(top==n-1){//checking if top reaches the end of the array
             cout<<"Stack Overflow"<<endl;
@@ -22,6 +24,7 @@ class Stack{
         arr[top]=x;//enter the element at the top
     }
 
+//to pop out the topmost value
     void pop(){// this function is to remove the top element of the stack
                //  though it doesnot work like that but shifts the top index to the previous index of it
         if (top==-1){//if the stack is empty
@@ -30,6 +33,8 @@ class Stack{
         }
         top--;
     }
+
+//to print the topmost value
     int Top(){// this shows the topmost element of the stack
         if(top==-1){
             cout<<"No element found"<<endl;
@@ -38,6 +43,8 @@ class Stack{
         return arr [top];
 
     }
+
+//to check if stack is empty
     bool empty(){//checks if the stack is empty
         return top==-1;
     }
