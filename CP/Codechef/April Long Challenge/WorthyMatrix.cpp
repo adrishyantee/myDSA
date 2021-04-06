@@ -1,57 +1,53 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+#define ll long long int 
+const int N=9999;
+
+ll getAvg(ll r1, ll r2, ll c1, ll c2,
+           ll dp[N + 1][N + 1])
+{
+    return (dp[r2][c2] - dp[r2][c1] - dp[r1][c2]
+           + dp[r1][c1])/2;
+}
+
+bool AvgFound(ll K, ll S, ll grid[N+1])
+{
+    ll dp[N + 1][N + 1];
+ 
+    for (ll i = 0; i < N; i++)
+        for (ll j = 0; j < N; j++)
+            dp[i + 1][j + 1] = dp[i + 1][j] + dp[i][j + 1]
+                               - dp[i][j] + grid[i][j];
+    for (ll i = 0; i < N; i++)
+        for (ll j = 0; j < N; j++) {
+            ll avg = getAvg(i, i + K, j, j + K, dp);
+ 
+            if (avg >= S)
+                return true;
+        }
+    return false;
+}
 
 int main(){
     int T;
     cin>>T;
     while(T--){
-    int N,M;
-    long int K,count=0,max=0;
-    cin>>N>>M>>K;
-    long int arr[N][M];
-    long int narr[N][M];
-    for (int i=0;i<N;i++){
-        for(int j=0;j<M;j++){
+    ll n,m,K;
+    ll count=0,sum=0;
+
+    cin>>n>>m>>K;
+    ll arr[n][m];
+    
+     for (ll i = 0; i < n; i++)
+        for (ll j = 0; j < m; j++) 
             cin>>arr[i][j];
-            narr[i][j]=arr[i][j];
-        }
-    }
-    
-    for(int i=0;i<N;i++){
-        int j=1;
-        while(j<M){
-            narr[i][j]=arr[i][j-1]+arr[i][j];
-            j++;
-        }
-    }
-    
-    for (int i=0;i<N;i++){
-    for(int j=0;j<M;j++){
-            arr[i][j]=narr[i][j];
-        }
-    }
-    
-    for(int j=0;j<M;j++){
-        int i=1;
-        while(i<N){
-            narr[i][j]=arr[i-1][j]+arr[i][j];
-            i++;
-        }
-    }
-    int m=0,n=0;
-    for(int i=0;i<N;i++){
-        for(int j=0;j<M;j++){
-            if(narr[i][j]>=K){
-                n=i;
-                m=j;
-                break;
-            }
-        }
-    }
-    cout<<(N-n)*M+(M-m)*n;
+
+    for(ll i=1;i<N;i++)
+       if(AvgFound(i,K,arr)==true)
+            count++;
     cout<<count<<endl;
 }
-    return 0;
 
+return 0;
 }
