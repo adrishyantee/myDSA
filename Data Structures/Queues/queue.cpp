@@ -64,6 +64,6 @@ int main(){
     q.push(4);
     cout<<q.peek()<<endl;
     q.pop();
-    cout<<q.peek();
+    cout<<q.peek()<<endl;
     return 0;
 }
