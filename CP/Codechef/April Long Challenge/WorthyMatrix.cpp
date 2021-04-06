@@ -44,7 +44,7 @@ int main(){
             cin>>arr[i][j];
 
     for(ll i=1;i<N;i++)
-       if(AvgFound(i,K,arr)==true)
+       if(AvgFound(i,K,arr[])==true)
             count++;
     cout<<count<<endl;
 }
