@@ -14,37 +14,26 @@ public:
     }
 
     //function to pop the 1st element which enetered
-    // void pop(){
-    //     static int count =0;
-    //     if(s1.empty()){//if stacks are empty
-    //         cout<<"Queue is empty\n";
-    //         return;
-    //     }
-
-    //     int x=s1.top();
-    //     s1.pop();
-
-    //     if(s1.empty()){
-    //         count=1;
-    //         return;
-    //     }
-
-    //     pop();
-    //     if(count!=1)
-    //     s1.push(x);
-    //     return;
-    // }
-
-    //to get the frontmost element
-    int peek(){
-        if(s1.empty()){//if stacks are empty
-        cout<<"Queue is empty\n";
-        return -1;
-        }
+    void pop(){
 
         int x = s1.top();//store the top element
         s1.pop();//pop out to get the next element
+
         if(s1.empty()){//if the stack is empty
+            return;//return the front most element
+        }
+        pop();//store the frontmost element to the peak;
+        s1.push(x);//store in the stack in the original order
+        return;//returning the frontmost element
+    }
+
+    //to get the frontmost element
+    int peek(){
+
+        int x = s1.top();//store the top element
+        s1.pop();//pop out to get the next element
+        if(s1.empty()){
+            s1.push(x);//if the stack is empty
             return x;//return the front most element
         }
         int item = peek();//store the frontmost element to the peak;
@@ -68,8 +57,10 @@ int main(){
     q.push(2);
     q.push(3);
     q.push(4);
+    q.push(5);
+    q.push(6);
     cout<<q.peek()<<endl;
-    // q.pop();
+    q.pop();
     cout<<q.peek()<<endl;
     return 0;  
 }

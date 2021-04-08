@@ -1,26 +1,22 @@
 ## ROAD MAP TO CP
 
 
-08/3/2021--Starting
-
 **1st set of basic stuffs**
 
-1. Pattern printing problems 
-2. time complexity analysis 
-3. linear search and circular array representation  
-4. palindrome and other numbers(perfect, Armstrong) for basic number problems  
+1. Pattern printing problems ---done
+2. time complexity analysis ---done
+3. linear search and circular array representation  ---done
+4. palindrome and other numbers(perfect, Armstrong) for basic number problems  ---done
 5. Simple Hashing Problem(frequency counting and stuffs) 
 6. Prefix Sum Problems(1D and 2D) {codeforces } 
 7. Sliding window technique(2 out of 5 contests) 
-
-15/3/2021---should be finished
 
 ----
 
 #### WEEK 2,3
 
 **Basics of number theory**
-1. Binary Search is a must(2/5 contests) 
+1. Binary Search is a must(2/5 contests) --- done
 2. GCD of 2 numbers in logarithmic time(Euclidean and Extended Euclidean Algorithm) 
 3. linear Diphantine Equation
 4. Checking prime in sqrt(n) complexity 
@@ -63,8 +59,8 @@
 ----
 
 **Time to learn recursion**
-1. start with basic problems like finding factorial and all. 
-2. implement binary search
+1. start with basic problems like finding factorial and all. ---done
+2. implement binary search 
 3. implement modular exponentiation using recurison
 4. solve recursion problems like finding subset with given and others to get a stronggrip
 5. Learn about merge sort and quick sort 

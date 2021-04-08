@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class node{
+class node{//make a node class just like linkedlist
     public:
     int data;
     node* next;
@@ -12,49 +12,53 @@ class node{
     }
 };
 
-class Queue{
+class Queue{//we also make a class queue to use
     node* front;
     node* back;
 
     public:
-    Queue(){
+    Queue(){//we set the constructor
         front=NULL;
         back=NULL;
     }
 
+    //for pushing a data
     void push(int x){
-        node* n=new node(x);
+        node* n=new node(x);//making a new node
 
-        if (front==NULL){
+        if (front==NULL){//if front is NULL we set them to new node
             back=n;
             front=n;
         }
-        back->next=n;
+        back->next=n;//else we change the back only and keep on changing
         back=n;
     }
 
+    //the pop operation
     void pop(){
-        if(front == NULL){
+        if(front == NULL){//if queue is empty
             cout<<"Queue underflow"<<endl;
         return;
         }
 
-        node* todelete=front;
-        front=front->next;
-        delete todelete;   
+        node* todelete=front;//we store the 1st element
+        front=front->next;//change the front pointer
+        delete todelete;  //freeing the space 
     }
 
+    //to get the data at the front
     int peek(){
-        if(front == NULL){
+        if(front == NULL){//if queue is empty
             cout<<"Queue is empty"<<endl;
             return -1;
         }
 
-    return front->data;
+    return front->data;//return the data at the front node
     }
 
+    //checking if the queue is empty
     bool empty(){
-        if(front == NULL){
+        if(front == NULL){//if front points to NULL the linkedlist is empty
             return true;
         }
         return false;

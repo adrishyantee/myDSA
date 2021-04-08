@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main(){
+int main(){//deque acts very similar to queue but can be popped from both back and front side
     deque<int> dq;
     dq.push_back(1);
     dq.push_back(2);
