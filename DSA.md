@@ -3,17 +3,15 @@
 
 **1st set of basic stuffs**
 
-1. Pattern printing problems ---done
-2. time complexity analysis ---done
-3. linear search and circular array representation  ---done
-4. palindrome and other numbers(perfect, Armstrong) for basic number problems  ---done
-5. Simple Hashing Problem(frequency counting and stuffs) 
-6. Prefix Sum Problems(1D and 2D) {codeforces } 
-7. Sliding window technique(2 out of 5 contests) 
+[X] 1. Pattern printing problems 
+[X] 2. time complexity analysis
+[X] 3. linear search and circular array representation
+[X] 4. palindrome and other numbers(perfect, Armstrong) for basic number problems
+[X] 5. Simple Hashing Problem(frequency counting and stuffs) 
+[] 6. Prefix Sum Problems(1D and 2D) {codeforces } 
+[..] 7. Sliding window technique(2 out of 5 contests) 
 
 ----
-
-#### WEEK 2,3
 
 **Basics of number theory**
 1. Binary Search is a must(2/5 contests) --- done
@@ -42,7 +40,7 @@
 
 ----
 
-#### WEEK 4
+
 
 1. learn about basic sorting algorithms (bubble, selection, insertion) 
 2. do problems which are constructive and have a lot of swapping terms in it. 
