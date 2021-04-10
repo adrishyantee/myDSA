@@ -3,13 +3,13 @@
 
 **1st set of basic stuffs**
 
--[x] 1. Pattern printing problems 
--[x] 2. time complexity analysis
--[x] 3. linear search and circular array representation
--[x] 4. palindrome and other numbers(perfect, Armstrong) for basic number problems
--[x] 5. Simple Hashing Problem(frequency counting and stuffs) 
--[] 6. Prefix Sum Problems(1D and 2D) {codeforces } 
--[..] 7. Sliding window technique(2 out of 5 contests) 
+- [x] 1. Pattern printing problems 
+- [x] 2. time complexity analysis
+- [x] 3. linear search and circular array representation
+- [x] 4. palindrome and other numbers(perfect, Armstrong) for basic number problems
+- [x] 5. Simple Hashing Problem(frequency counting and stuffs) 
+- [ ] 6. Prefix Sum Problems(1D and 2D) {codeforces } 
+- [..] 7. Sliding window technique(2 out of 5 contests) 
 
 ----
 
