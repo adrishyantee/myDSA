@@ -2,7 +2,7 @@
 using namespace std;
 
 
-class node{
+class node{//make a node class for connecting each node to each other
     public:
     int data;
     node* left;
@@ -17,9 +17,9 @@ class node{
 
 
 
-int main(){
+int main(){//we connect root to its left and left to its left and lrft to its right and so on...
     node* root =new node(1);
     root->left=new node(2);
     root->right=new node(3);
-
+    return 0;
 }

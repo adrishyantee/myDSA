@@ -2,21 +2,21 @@
 using namespace std;
 
 
-class node{
+class node{//we create a node class
 
     public:
     int data;
     node* left;
     node* right;
 
-    node(int val){
+    node(int val){//we define a constructor so that we can set the default values.
         data=val;
         left=NULL;
         right=NULL;
     }
 };
 
-    void Preorder(node* &root){
+    void Preorder(node* &root){//traverse in prorder style
         if(root==NULL)
         return;
 
@@ -25,7 +25,7 @@ class node{
         Preorder(root->right);
     }
 
-    void Inorder(node* &root){
+    void Inorder(node* &root){//traverse in inorder style
         if(root==NULL)
         return;
 
@@ -34,7 +34,7 @@ class node{
         Inorder(root->right);
     }
 
-    void Postorder(node* &root){
+    void Postorder(node* &root){//traverse in post order style
         if(root==NULL)
         return;
 
