@@ -25,13 +25,13 @@ int search(int inorder[],int start,int end,int curr){//this function searches th
 }
 
 //we are uing recursion for building the tree
-node* buildTree(int post     order[], int inorder[],int start,int end){//we get two arrays and the start and end of inorder
-    static int index=0;//we set the index of element in preorder
+node* buildTree(int postorder[], int inorder[],int start,int end){//we get two arrays and the start and end of inorder
+    static int index = 4;//we set the index of element in preorder
     if(start>end){//base case 
         return NULL;
     }
-    int curr = preorder[index];//we get the current element in the index of preorder
-    index++;
+    int curr = postorder[index];//we get the current element in the index of preorder
+    index--;
     node* Node = new node(curr);//we made a node for the current element
     
     if(start==end){//if the end and start meets the we return the node itself because we have no other stuff to do
@@ -39,9 +39,9 @@ node* buildTree(int post     order[], int inorder[],int start,int end){//we get 
     }
   
     int pos=search(inorder,start,end,curr);//we search the element in the inorder array
-    Node->left=buildTree(preorder,inorder,start,pos-1);//if found in the left part then this happens
-    Node->right=buildTree(preorder,inorder,pos+1,end);//if found on the right part then this happens
-
+    Node->right=buildTree(postorder,inorder,pos+1,end);//if found on the right part then this happens
+    Node->left=buildTree(postorder,inorder,start,pos-1);//if found in the left part then this happens
+   
     return Node;
 }
 
