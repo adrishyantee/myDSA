@@ -15,7 +15,7 @@ class node{//we have to create node class to create nodes to connect
     }
 };
 
-int search(int inorder[],int start,int end,int curr){//this function searches the element of preorder in inorder segment
+int search(int inorder[],int start,int end,int curr){//this function searches the element of postorder in inorder segment
     for(int i=start;i<=end;i++){
         if(inorder[i]==curr){
             return i;//returning the position
@@ -30,7 +30,7 @@ node* buildTree(int postorder[], int inorder[],int start,int end){//we get two a
     if(start>end){//base case 
         return NULL;
     }
-    int curr = postorder[index];//we get the current element in the index of preorder
+    int curr = postorder[index];//we get the current element in the index of postorder
     index--;
     node* Node = new node(curr);//we made a node for the current element
     
