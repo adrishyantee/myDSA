@@ -15,31 +15,37 @@ class node{//make a node class for connecting each node to each other
     }
 };
 
-void levelorder(node* root){
+void rightView(node* root){
     if(root == NULL){
         return;
     }
+
     queue<node*> q;
     q.push(root);
-    q.push(NULL);
+
 
     while(!q.empty()){
+        int  n=q.size();
+
+        for(int i=0;i<n;i++){
+
         node* node=q.front();
         q.pop();
-        if(node!=NULL){
+
+        if(i == n-1){
             cout<<node->data<<" ";
-            if(node->left)
-            q.push(node->left);
-            if(node->right)
-            q.push(node->right);
         }
-        else if(!q.empty()){
-            q.push(NULL);
+
+        if(node->left!=NULL)
+        q.push(node->left);
+
+        if(node->right!=NULL)
+        q.push(node->right);
+
         }
     }
 
 }
-
 
 
 int main(){//we connect root to its left and left to its left and left to its right and so on...
@@ -50,6 +56,6 @@ int main(){//we connect root to its left and left to its left and left to its ri
     root->right->left=new node(6);
     root->left->right=new node(5);
     root->right->right=new node(7);
-    levelorder(root);
+    rightView(root);
     return 0;
 }
