@@ -26,7 +26,7 @@ node* LCA(node* root, int n1, int n2){
     node* left =LCA(root->left,n1,n2);
     node* right =LCA(root->right,n1,n2);
 
-//the main function which returns the LCA.
+//the edge cases
     if(left != NULL && right != NULL){
         return root;
     }
@@ -38,6 +38,19 @@ node* LCA(node* root, int n1, int n2){
     }
     return LCA(root->right,n1,n2);
 }
+//another way
+    node *lca(node *root, int v1,int v2) {
+    //Decide if you have to call rekursively
+    //Samller than both
+    if(root->data < v1 && root->data < v2){
+        return lca(root->right,v1,v2);
+    }
+    //Bigger than both
+    if(root->data > v1 && root->data > v2){
+        return lca(root->left,v1,v2);
+    }
+    }
+
 
 //finding distance between two nodes from the lca and adding
 int findDist(node* root, int k, int dist){
