@@ -30,54 +30,11 @@ node* LCA(node* root, int n1, int n2){
     if(left != NULL && right != NULL){
         return root;
     }
-    if(left == NULL && right == NULL){
-        return root;
-    }
+    
     if(left != NULL){
-        return LCA(root->left,n1,n2);
-    }
-    return LCA(root->right,n1,n2);
-}
-
-//another way
-    node* lca(node *root, int v1,int v2) {
-    //Decide if you have to call rekursively
-    //Samller than both
-    if(root->data < v1 && root->data < v2){
-        return lca(root->right,v1,v2);
-    }
-    //Bigger than both
-    if(root->data > v1 && root->data > v2){
-        return lca(root->left,v1,v2);
-    }
-    return NULL;
-    }
-
-
-//finding distance between two nodes from the lca and adding
-int findDist(node* root, int k, int dist){
-    if(root==NULL){
-        return -1;
-    }
-    if(root->data == k){
-        return dist;
-    }
-
-    int left=findDist(root->left, k, dist+1);
-    if(left != -1){
         return left;
     }
-    
-   return findDist(root->right, k, dist+1);
-}
-
-
-int distBtwNodes(node* root,int n1, int n2){
-    node* lca=LCA(root, n1 ,n1);
-
-    int d1 = findDist(lca, n1, 0);
-    int d2 = findDist(lca, n2, 0);
-    return d1+d2;
+    return right;
 }
 
 
@@ -90,7 +47,7 @@ int main(){//we connect root to its left and left to its left and left to its ri
     root->right->left=new node(5);
     root->right->right=new node(6); 
     root->right->left->left= new node(7);
-
-    cout<<distBtwNodes(root,6,7)<<endl;
+    node* temp=LCA(root, 6,7);
+    cout<<temp->data<<endl;  
     return 0;
 }
