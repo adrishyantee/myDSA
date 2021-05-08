@@ -4,6 +4,13 @@
         "*.tcc": "cpp",
         "cmath": "cpp",
         "ostream": "cpp",
-        "charconv": "cpp"
+        "charconv": "cpp",
+        "array": "cpp",
+        "fstream": "cpp",
+        "future": "cpp",
+        "shared_mutex": "cpp",
+        "sstream": "cpp",
+        "thread": "cpp",
+        "tuple": "cpp"
     }
 }
