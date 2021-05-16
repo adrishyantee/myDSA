@@ -5,15 +5,18 @@ int main(){
     int T;
     cin>>T;
     while(T>0){
-        int N,M;
-        int count=0;
+        long int N,M;
+        long int count=0;
         cin>>N>>M;
-        for(int i=1;i<N;i++){
-            for(int j=i+1;j<=N;j++){
-            if(((M%i)%j)==((M%j)%i))
-            count++;
-        }   
-    }
+
+        vector<long int> mod(N+1,1);
+        for(long int a=2;a<=N;a++){
+            long int x=M%a;
+            count+=mod[x];
+            for(long int b=x;b<=N;b+=a){
+                mod[b]++;
+            }
+        }  
     cout<<count<<endl;
     T--;
     }
