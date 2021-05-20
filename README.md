@@ -175,3 +175,55 @@ then some optional and rare ones:
 3. Heavy Light Decomposition
 4. Convex Hull Algorithm
 5. FFT/NTT
+
+A catalogue found on github:
+
+| Sl. | Topic | | Sl. | Topic |
+|---|---|---|---|---|
+| 1. | &#9744; Terminologies & Jargons | | 46. | &#9744; Maximum Bipartite |
+| 2. | &#9744; Insertion Sort | | 47. | &#9744; Multithreading Basics |
+| 3. | &#9744; Merge Sort | | 48. | &#9744; Linear Equalities and LPP |
+| 4. | &#9744; Maximum Subarray Sum | | 49. | &#9744; The Simplex Algorithm |
+| 5. | &#9744; Strassen's Algorithm] | | 50. | &#9744; Fourier Transforms |
+| 6. | &#9744; Randomized Algorithms | | 51. | &#9744; G.C.D |
+| 7. | &#9744; Heap Sort | | 52. | &#9744; Modular Arithmetic |
+| 8. | &#9744; Quick Sort | | 53. | &#9744; Pollard's Rho Heuterics |
+| 9. | &#9744; Counting Sort | | 54. | &#9744; Rabin Carp's Algorithm |
+| 10. | &#9744; Radix Sort | | 55. | &#9744; Knuth-Morris-Pratt's Algoritm |
+| 11. | &#9744; Bucket Sort | | 56. | &#9744; Line Segments in Problem Solving |
+| 12. | &#9744; Stacks | | 57. | &#9744; Convex Hull |
+| 13. | &#9744; Linked List | | 58. | &#9744; Closest Pairs |
+| 14. | &#9744; Hash Tables & Hashing | | 59. | &#9744; NP - P Completeness |
+| 15. | &#9744; Binary Search Trees | | 60. | &#9744; Hamiltonian Cycles |
+| 16. | &#9744; Red Black Trees | | 61. | &#9744; The Clique Problem |
+| 17. | &#9744; AVL Trees | | 62. | &#9744; Vertex Cover |
+| 18. | &#9744; Order Statistics | | 63. | &#9744; The Travelling Salesman Problem |
+| 19. | &#9744; Interval Trees | | 64. | &#9744; Subset Sum |
+| 20. | &#9744; Rod Cutting | | 65. | &#9744; Bogo sort|
+| 21. | &#9744; Matrix Chain Multiplication | | 66. | &#9744; Sieve_of_Eratosthenes |
+| 22. | &#9744; Longest Common Subsequence | | 67. | &#9744; Bead sort|
+| 23. | &#9744; Optimal BST | | 68. | &#9744; Bionic sort|
+| 24. | &#9744; The Activity Selection Problem | | 69. | &#9744; BinaryInsertion sort|
+| 25. | &#9744; 0-1 Knapsack | | 70. | &#9744; Comb sort|
+| 26. | &#9744; Fractional Knapsack | | 71. | &#9744; Cocktail sort|
+| 27. | &#9744; Hoffman's code | | 72. | &#9744; Cycle sort|
+| 28. | &#9744; Matroids | | 73. | &#9744; Gnome sort|
+| 29. | &#9744; Dynamic Tables | | 74. | &#9744; PigeonHole sort|
+| 30. | &#9744; B-Trees | | 75. | &#9744; Tim sort|
+| 31. | &#9744; Fibonacci Heaps | | 76. | &#9744; Shell sort|
+| 32. | &#9744; van Emde Boas Trees | | 77. | &#9744; Wave array|
+| 33. | &#9744; Disjont Sets || 78. | &#9744; Trapping rainwater|
+| 34. | &#9744; Graph Representation | | 79. | &#9744; LRU cache implementation|
+| 35. | &#9744; B.F.S | | 80. | &#9744; Path sum binary tree|
+| 36. | &#9744; D.F.S | | 81. | &#9744; Sliding window maximum|
+| 37. | &#9744; Topological Sort | | 82. | &#9744; Invert binary tree|
+| 38. | &#9744; Minimum Spanning Trees | | 83. | &#9744; Climbing stairs problem|
+| 39. | &#9744; Kruskal's Algorithm | | 84. | &#9744; Trie tree|
+| 40. | &#9744; Prim's Algorithm | | 85. | &#9744; Fibonacci Search|
+| 41. | &#9744; Bellman-Ford's Algorithm | | 86. | &#9744; Round Robin scheduling|
+| 42. | &#9744; Djikstra's Algorithm | | 87. | &#9744; Shortest-Job-First (SJF) Scheduling|
+| 43. | &#9744; Floyd-Warshall's Algorithm | | 88. | &#9744; Multilevel Queue Scheduling|
+| 44. | &#9744; Johnson's Algorithm | | 89. | &#9744; Priority Scheduling|
+| 45. | &#9744; Ford-Fullkerson's Algorithm | &nbsp;    &nbsp; | | |
+
+<br>
