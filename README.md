@@ -14,11 +14,11 @@
 ----
 
 **Basics of number theory**
-1. Binary Search is a must(2/5 contests) --- done
-2. GCD of 2 numbers in logarithmic time(Euclidean and Extended Euclidean Algorithm) 
-3. linear Diphantine Equation
-4. Checking prime in sqrt(n) complexity 
-5. Sieve of Eratosthenes(very imp to perform querry probs on the prime) 
+- [X] 1. Binary Search is a must(2/5 contests)
+- [X] 2. GCD of 2 numbers in logarithmic time(Euclidean and Extended Euclidean Algorithm) 
+- [X] 3. linear Diphantine Equation
+- [X] 4. Checking prime in sqrt(n) complexity 
+- [X] 5. Sieve of Eratosthenes(very imp to perform querry probs on the prime) 
 6. Segmented Sieve
 7. Finding prime factorisation of a number in logn per querry
 8. Euler Totent Function
