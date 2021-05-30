@@ -19,7 +19,7 @@
 - [X] 3. linear Diphantine Equation
 - [X] 4. Checking prime in sqrt(n) complexity 
 - [X] 5. Sieve of Eratosthenes(very imp to perform querry probs on the prime) 
-6. Segmented Sieve
+- [X] 6. Segmented Sieve
 7. Finding prime factorisation of a number in logn per querry
 8. Euler Totent Function
 9. Fermat Little Theorum
