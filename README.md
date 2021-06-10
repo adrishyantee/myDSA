@@ -23,17 +23,17 @@
 - [X] 7. Finding prime factorisation of a number in logn per querry
 - [X] 8. Euler Totent Function
 - [X] 9. Fermat Little Theorum
-10. Wilson's Theorum
+- [X] 10. Wilson's Theorum
 
 (gfg articles and hacker earth probs for 8,9,10)
 
 **Tougher version of number theory**
 
-1. Finding x^n in log(n) 
-2. Modular Arithmetic
-3. Modular Inverse of a number
-3. Modular Exponentiation
-4. Chinese Remainder Theorum
+- [X] 1. Finding x^n in log(n) 
+- [X] 2. Modular Arithmetic
+- [X] 3. Modular Inverse of a number
+- [X] 3. Modular Exponentiation
+- [X] 4. Chinese Remainder Theorum
 5. Factorial Modulo Mod
 6. Finding nCr and nPr for queries (constant time) 
 7. Inclusion Exclusion Principle (combinatorics problems) {hackerearth has wonderful bunch} {codeforces}
@@ -57,7 +57,7 @@
 ----
 
 **Time to learn recursion**
-1. start with basic problems like finding factorial and all. ---done
+1. start with basic problems like finding factorial and all.
 2. implement binary search 
 3. implement modular exponentiation using recurison
 4. solve recursion problems like finding subset with given and others to get a stronggrip
