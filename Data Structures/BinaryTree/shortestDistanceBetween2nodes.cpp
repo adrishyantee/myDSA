@@ -55,7 +55,7 @@ node* LCA(node* root, int n1, int n2){
 
 
 //finding distance between two nodes from the lca and adding
-int findDist(node* root, int k, int dist){
+int findDist(node* root, int k, int dist=0){
     if(root==NULL){
         return -1;
     }
