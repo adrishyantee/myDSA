@@ -16,7 +16,7 @@ class node{//make a node class for connecting each node to each other
 
 int sumAtK(node* root, int K){
     if(root == NULL)
-    return-1;
+    return -1;
 
     queue<node*> q;
     q.push(root);

@@ -37,7 +37,7 @@ int main(){
 
         for(it=adj[node].begin();it!=adj[node].end();it++){
             if(!vis[*it]){
-                vis[*it]=1;
+                vis[*it]=true;
                 q.push(*it);
             }
         }
