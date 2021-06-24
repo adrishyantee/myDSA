@@ -2,29 +2,24 @@
 using namespace std;
 
 
-bool isPossible(int arr[],int n, int m, int min){
+bool isPossible(vector<int> arr,int n, int m, int min){
     int studentsRequired=1,sum=0;
 
     for(int i=0;i<n;i++){
-        if(arr[i]>min){
-            return false;
-        }
-        if(sum+arr[i]>min){
+        sum+=arr[i];
+        if(sum>min){
+            cout<<sum<<endl;
             studentsRequired++;
             sum=arr[i];
-
             if(studentsRequired > m){
                 return false;
             }
-        }
-        else{
-            sum+=arr[i];
         }
     }
     return true;
 }
 
-int allocateMinimumPages(int arr[], int n, int m){
+int allocateMinimumPages(vector<int>arr, int n, int m){
     int sum=0;
     if(n<m){
         return -1;
@@ -34,12 +29,12 @@ int allocateMinimumPages(int arr[], int n, int m){
         sum+=arr[i];
     }
 
-    int start =0,end=sum ,ans =INT_MAX;
+    int start = *max_element(arr.begin(), arr.end()),end=sum,ans =-1;
 
     while(start<=end){
-        int mid=(start+end)/2;
+        int mid=start+(end-start)/2;
         if(isPossible(arr,n,m,mid)){
-            ans=min(ans,mid);
+            ans=mid;
             end=mid-1;
         }
         else{
@@ -50,7 +45,7 @@ int allocateMinimumPages(int arr[], int n, int m){
     return ans;
 }
 int main(){
-    int arr[]={12,34,67,90};
-    cout<<allocateMinimumPages(arr,4,2)<<endl;
+    vector<int> arr={1,4,4};
+    cout<<allocateMinimumPages(arr,3,3)<<endl;
     return 0;
 }
