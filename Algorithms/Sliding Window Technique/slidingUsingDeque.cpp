@@ -26,7 +26,7 @@ void printKMax(int arr[], int n, int k)
 		i++;
 		j++;
 	    }
-}
+	}
 
 for(int i=0;i<ans.size();i++){
 	cout<<ans[i]<<" ";
