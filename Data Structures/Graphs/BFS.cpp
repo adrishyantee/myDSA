@@ -24,10 +24,13 @@ int main(){
     adj[y].push_back(x);
     }
 
+    for(int i = 1;i<N;i++){
+        if(!vis[i]){
+
     queue<int> q;
 
-    q.push(1);
-    vis[1]=true;
+    q.push(i);
+    vis[i]=true;
     while(!q.empty()){
         int node = q.front();
         q.pop();
@@ -40,9 +43,10 @@ int main(){
                 vis[*it]=true;
                 q.push(*it);
             }
+          }
         }
+      }
     }
-
 
  
  return 0;

@@ -38,6 +38,10 @@ int main(){
     adj[x].push_back(y);
     adj[y].push_back(x);
     }
-    dfs(1);
+
+    for(int i=1;i<=N;i++){
+        if(!vis[i])
+        dfs(1);
+    }
  return 0;
 }
