@@ -1,44 +1,77 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    int n,m; cin>>m>>n;
-
-        vector<vector<int>> adj(n);
-        vector<int> indeg(n,0);
-
-        for(int i=0;i<m;i++){
-
-        int x,y;
-        cin>>x>>y;
-// x to y
-        adj[x].push_back(y);
-        indeg[y]++;
-        }
-
-        queue<int> pq;
-        for(int i = 0;i<n;i++){
-            if(indeg[i]==0){
-                pq.push(i);
+class Solution{
+    void findTopoSort(int node, vector<int> &vis, stack<int> &st, vector<int> adj[]) {
+        vis[node] = 1; 
+        
+        for(auto it : adj[node]) {
+            if(!vis[it]) {
+                findTopoSort(it, vis, st, adj); 
             }
         }
+        st.push(node); 
+    }
+	public:
+	vector<int> topoSort(int N, vector<int> adj[]) {
+	    stack<int> st; 
+	    vector<int> vis(N, 0); 
+	    for(int i = 0;i<N;i++) {
+	        if(vis[i] == 0) {
+	            findTopoSort(i, vis, st, adj); 
+	        }
+	    }
+	    vector<int> topo;
+	    while(!st.empty()) {
+	        topo.push_back(st.top()); 
+	        st.pop(); 
+	    }
+	    return topo; 
+	    
+	}
+};
 
+// { Driver Code Starts.
 
-        int cnt=0;
-        while(!pq.empty()){
-            cnt++;
-            int x = pq.front();
-            pq.pop();
-
-            cout<<x<<" ";
-
-            for(int i:adj[x]){
-                indeg[i]-=cnt;
-                if(indeg[i]==0)
-                pq.push(i);
-            }
+/*  Function to check if elements returned by user
+*   contains the elements in topological sorted form
+*   V: number of vertices
+*   *res: array containing elements in topological sorted form
+*   adj[]: graph input
+*/
+int check(int V, vector <int> &res, vector<int> adj[]) {
+    vector<int> map(V, -1);
+    for (int i = 0; i < V; i++) {
+        map[res[i]] = i;
+    }
+    for (int i = 0; i < V; i++) {
+        for (int v : adj[i]) {
+            if (map[i] > map[v]) return 0;
         }
-
-        return 0;
-
+    }
+    return 1;
 }
+
+int main() {
+    int T;
+    cin >> T;
+    while (T--) {
+        int N, E;
+        cin >> E >> N;
+        int u, v;
+
+        vector<int> adj[N];
+
+        for (int i = 0; i < E; i++) {
+            cin >> u >> v;
+            adj[u].push_back(v);
+        }
+        
+        Solution obj;
+        vector <int> res = obj.topoSort(N, adj);
+
+        cout << check(N, res, adj) << endl;
+    }
+    
+    return 0;
+} 
