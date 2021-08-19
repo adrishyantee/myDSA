@@ -19,7 +19,7 @@ class GFG
                 int u = Integer.parseInt(S[0]);
                 int v = Integer.parseInt(S[1]);
                 adj.get(u).add(v);
-                // adj.get(v).add(u);
+                adj.get(v).add(u);
             }
             Solution obj = new Solution();
             ArrayList<Integer>ans = obj.bfsOfGraph(V, adj);
@@ -40,8 +40,10 @@ class Solution
         boolean vis[] = new boolean[V]; 
         Queue<Integer> q = new LinkedList<>();
         
-        q.add(0); 
-        vis[0] = true; 
+        for(int i =0;i<V;i++){
+            if(!vis[i]){
+            q.add(i); 
+           vis[0] = true; 
         
         while (!q.isEmpty())
         {
@@ -58,6 +60,9 @@ class Solution
                 } 
             }
         }
+            }
+        }
+        
         
         return bfs; 
     }
