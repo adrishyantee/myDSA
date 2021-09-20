@@ -16,14 +16,6 @@ class node{//we create a node class
     }
 };
 
-    void Preorder(node* &root){//traverse in prorder style
-        if(root==NULL)
-        return;
-
-        cout<<root->data<<" ";
-        Preorder(root->left);
-        Preorder(root->right);
-    }
 
     void Inorder(node* &root){//traverse in inorder style
         if(root==NULL)
@@ -34,14 +26,27 @@ class node{//we create a node class
         Inorder(root->right);
     }
 
-    void Postorder(node* &root){//traverse in post order style
-        if(root==NULL)
-        return;
-
-        Postorder(root->left);
-        Postorder(root->right);
-        cout<<root->data<<" ";
+    //iterative
+        vector<int> inorderTraversal(node* root) {
+        vector<int> ans;
+        stack<node*> st;
+        
+       while(!st.empty() || root!=NULL) {
+        if(root!=NULL)
+        {
+            st.push(root);
+            root=root->left;
+        }
+        else{
+            node* node=st.top();
+            ans.push_back(node->data);
+            root=node->right;
+            st.pop();
+         }
+       }
+        return ans; 
     }
+
 
 int main(){
     node* root = new node(1);
@@ -52,9 +57,8 @@ int main(){
     root->right->left = new node(6);
     root->right->right = new node(7);
 
-    Preorder(root);
     Inorder(root);
-    Postorder(root);
+
 
     return 0;
 }
