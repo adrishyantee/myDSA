@@ -41,7 +41,7 @@ int main(){
 
     for(int i=1;i<=N;i++){
         if(!vis[i])
-        dfs(1);
+        dfs(i);
     }
  return 0;
 }
