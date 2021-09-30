@@ -23,50 +23,23 @@ int height(node* root){
     int rheight = height(root->right);
     return max(lheight,rheight)+1;
 }
+    bool isBalanced(node* root) {
+        if(root==NULL)
+            return true;
+        
+        if(!isBalanced(root->left))
+            return false;
+        if(!isBalanced(root->right))
+            return false;
+        
+        int lh=height(root->left);
+        int rh=height(root->right);
+        
+        return (abs(lh-rh) <= 1);
 
-bool isbalanced(node* root){
-
-    if(root==NULL){
-        return true;
     }
 
-    if(isbalanced(root->left)==false){
-        return false;
-    }
-    if(isbalanced(root->right)==false){
-    return false;
-    }
-
-    int lh = height(root->left);
-    int rh = height(root->right);
-    if(abs(lh-rh)<=1)
-    return true;
-    else
-    return false;
-}
-
-//optimised solution 
-bool isbalanced2(node* root, int* height){
-
-    if(root==NULL){
-        return true;
-    }
-
-    int lh=0, rh =0;
-    if(isbalanced2(root->left, &lh)==false){
-        return false;
-    }
-    if(isbalanced2(root->right, &rh)==false){
-    return false;
-    }
-
-    *height = max(lh,rh)+1;
-
-    if(abs(lh-rh)<=1)
-    return true;
-    else
-    return false;
-}
+//timecomplexity of this is O(N2)
 
 
 
@@ -74,18 +47,6 @@ int main(){//we connect root to its left and left to its left and lrft to its ri
     node* root =new node(1);
     root->left=new node(2);
     root->right=new node(3);
-    int height=0;
-
-    cout<<(isbalanced(root)?"Balanced":"Unbalanced")<<endl;
-    cout<<(isbalanced2(root, &height)?"Balanced":"Unbalanced")<<endl;
-
-    node* root2=new node(1);
-    root2->left=new node(2);
-    root2->left->left=new node(3);
-    root2->left->left->left=new node(4);
-    
-    cout<<(isbalanced(root2)?"Balanced":"Unbalanced")<<endl;
-    cout<<(isbalanced2(root2, &height)?"Balanced":"Unbalanced")<<endl;
-
+    cout<<height(root)-1;
     return 0;
 }
