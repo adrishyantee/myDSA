@@ -31,14 +31,6 @@ class Solution{
 	}
 };
 
-// { Driver Code Starts.
-
-/*  Function to check if elements returned by user
-*   contains the elements in topological sorted form
-*   V: number of vertices
-*   *res: array containing elements in topological sorted form
-*   adj[]: graph input
-*/
 int check(int V, vector <int> &res, vector<int> adj[]) {
     vector<int> map(V, -1);
     for (int i = 0; i < V; i++) {
