@@ -16,6 +16,7 @@ class node{//we create a node class
     }
 };
 
+//traversals
     void Preorder(node* &root){//traverse in prorder style
         if(root==NULL)
         return;
