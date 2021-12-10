@@ -126,7 +126,7 @@ ms.erase(ms.find(1),ms.find(1)+2);// deleted two ones
 **UNORDERED SET**
 lowerbound upper bound doesnot work rest of them are same when array is sorted
 it doesnot have any order has better time complexity than set but collision can occur at times
-unordered<int> st;
+unordered_set<int> st;
 all functions are same as set
 
 **MAP**
