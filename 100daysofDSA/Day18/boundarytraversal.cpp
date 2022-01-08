@@ -55,14 +55,19 @@ public:
        vector<int> ans;
        if(root==NULL)
        return ans;
+       if(root->left!=NULL)
        traversalleft(root, ans);
+       else
+       ans.push_back(root->data);
        leafnodes(root,ans);
        stack <int> s;
+       if(root->right!=NULL){
        traversalright(root, s);
        while(s.size()>1){
           ans.push_back(s.top());
           s.pop();
-      }
+        }
+       }
        return ans;
       
     }
